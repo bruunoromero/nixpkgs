@@ -1,0 +1,4 @@
+user.nix
+.DS_Store
+.devenv*
+devenv.local.nix

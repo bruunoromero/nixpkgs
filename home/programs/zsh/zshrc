@@ -1,0 +1,49 @@
+. /etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh
+
+unsetopt BEEP
+
+alias gsed="sed"
+
+export EDITOR="nvim"
+export NU_HOME="$HOME/dev/nu"
+export PERSONAL_HOME="$HOME/dev/personal"
+export NUCLI_HOME=$NU_HOME/nucli
+export CAPTURE_HOME=$PERSONAL_HOME/capture
+
+export MONOREPO_ROOT="${NU_HOME}/mini-meta-repo"
+
+export GOPATH="$HOME/go"
+
+export ANDROID_HOME="/Users/bruno.romero/Library/Android/sdk"
+export ANDROID_SDK="$ANDROID_HOME"
+
+export FLUTTER_SDK_HOME="$HOME/sdk-flutter"
+export FLUTTER_ROOT="$FLUTTER_SDK_HOME"
+
+export PATH="$HOME/nixpkgs/scripts:$PATH"
+export PATH="$NUCLI_HOME:$PATH"
+export PATH="$CAPTURE_HOME/bin:$PATH"
+export PATH="$PATH:$MONOREPO_ROOT/monocli/bin"
+
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$HOME/.cargo/env:$PATH"
+export PATH="$HOME/.deta/bin:$PATH"
+export PATH="$HOME/.detaspace/bin:$PATH"
+export PATH="$GOPATH/bin:$PATH"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator"
+export PATH="$PATH:$FLUTTER_SDK_HOME/bin:$HOME/.pub-cache/bin:$FLUTTER_ROOT/bin/cache/dart-sdk/bin"
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:/usr/bin"
+export PATH="$PATH:$HOME/.emacs.d/bin"
+export PATH="$PATH:$HOME/.emacs.d/bin"
+
+export GPG_TTY=$(tty)
+export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+export ZK_NOTEBOOK_DIR="$HOME/zk"
+
+export PNPM_HOME="/Users/bruno.romero/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
+export PAGER="bat"
+
+bindkey '^g' clear-screen

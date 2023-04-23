@@ -1,0 +1,121 @@
+{
+  "semanticTokens.enable": false,
+  "codeLens.enable": true,
+  "codeLens.position": "eol",
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextAlign": "right",
+  "diagnostic.messageTarget": "echo",
+  "diagnostic.hintSign": "",
+  "diagnostic.infoSign": "",
+  "diagnostic.errorSign": "",
+  "diagnostic.warningSign": "⚠",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "go",
+    "vim",
+    "css",
+    "vue",
+    "xml",
+    "elm",
+    "lua",
+    "html",
+    "zig",
+    "toml",
+    "json",
+    "scss",
+    "rust",
+    "astro",
+    "jsonc",
+    "python",
+    "svelte",
+    "prisma",
+    "clojure",
+    "haskell",
+    "crystal",
+    "purescript",
+    "rescript",
+    "lhaskell",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "yank.highlight.duration": 200,
+  "highlight.colors.enable": false,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.width": 30,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", ["expanded?", "collapse", "expand"], "open"]
+  },
+  "Lua.hint.enable": false,
+  "sumneko-lua.enableNvimLuaDev": true,
+  "prettier.formatterPriority": 10,
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "python.formatting.provider": "black",
+  "prettier.enable": true,
+  "prettier.enableDebugLogs": true,
+  "languageserver": {
+    "crystal": {
+      "command": "crystalline",
+      "args": ["--stdio"],
+      "filetypes": ["crystal"],
+      "rootPatterns": ["shard.yml"]
+    },
+    "elmLS": {
+      "enable": true,
+      "trace.server": "off",
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"],
+      "settings": {
+        "elmFormatPath": "elm-format",
+        "elmAnalyseTrigger": "save"
+      }
+    },
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        ".stack.yaml",
+        ".hie-bios",
+        "BUILD.bazel",
+        "cabal.config",
+        "package.yaml"
+      ],
+      "filetypes": ["hs", "lhs", "haskell"],
+      "initializationOptions": {
+        "languageServerHaskell": {
+          "hlintOn": true,
+          "maxNumberOfProblems": 10,
+          "completionSnippetsOn": true
+        }
+      }
+    },
+    "rescript": {
+      "enable": true,
+      "module": "~/.local/share/nvim/site/pack/packer/start/vim-rescript/server/out/server.js",
+      "args": ["--node-ipc"],
+      "filetypes": ["rescript"],
+      "rootPatterns": ["bsconfig.json"]
+    },
+    "purescript": {
+      "command": "purescript-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["purescript"],
+      "trace.server": "off",
+      "rootPatterns": ["bower.json", "psc-package.json", "spago.dhall"],
+      "settings": {
+        "purescript": {
+          "addSpagoSources": true,
+          "addNpmPath": true,
+          "formatter": "purs-tidy"
+        }
+      }
+    }
+  },
+  "zig.enabled": true,
+  "zig.startUpMessage": true,
+  "zig.path": "zls",
+  "zig.debugLog": false,
+  "svelte.enable-ts-plugin": true
+}
