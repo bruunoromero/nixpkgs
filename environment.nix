@@ -1,8 +1,8 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = [ 
-    (import (fetchTarball https://github.com/cachix/devenv/archive/v0.6.2.tar.gz)).default
+  environment.systemPackages = [
+    (import (fetchTarball https://github.com/cachix/devenv/archive/v0.6.3.tar.gz)).default
   ];
 
   environment.darwinConfig = "$HOME/nixpkgs/configuration.nix";

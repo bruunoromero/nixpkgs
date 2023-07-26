@@ -1,7 +1,12 @@
 local M = {}
 
 function M.setup(user)
-  local packer = require("packer")
+  local ok, packer = pcall(require, "packer")
+
+  if not ok then
+    return
+  end
+
   local core = require("core.bootstrap")
   local register = require("core.plugins.register")
 

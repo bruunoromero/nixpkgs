@@ -6,9 +6,7 @@
 
   system.stateVersion = 4;
 
-  system.keyboard = {
-    enableKeyMapping = true;
-  };
+  system.keyboard = { enableKeyMapping = true; };
 
   system.defaults.NSGlobalDomain = {
     KeyRepeat = 1;

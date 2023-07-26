@@ -3,16 +3,25 @@
 {
   homebrew = {
     enable = true;
-    onActivation = {
-      cleanup = "zap";
-    };
+    onActivation = { cleanup = "zap"; };
     taps = [
+      "homebrew/services"
+      "koekeishiya/formulae"
       "kidonng/homebrew-malt"
       "planetscale/homebrew-tap"
     ];
     brews = [
+      {
+        name = "yabai";
+        start_service = true;
+      }
+      {
+        name = "skhd";
+        start_service = true;
+      }
+      "bash"
       "pscale"
-      "mysql-client"
+      "coreutils"
       "cocoapods"
       "gnu-sed"
       "watch"
@@ -21,11 +30,8 @@
       "elixir-ls"
       "crystal"
       "flyctl"
+      "luarocks"
     ];
-    casks = [
-      "warp"
-      "notion"
-      "brave-browser"
-    ];
+    casks = [ "arc" "notion" "brave-browser" "obsidian" ];
   };
 }

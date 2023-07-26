@@ -9,25 +9,25 @@
 
   ];
 
-  programs.command-not-found = {
-    enable = true;
-  };
+  programs.command-not-found = { enable = true; };
 
   programs.zsh = {
     enable = true;
-    initExtra = ''
-      fpath=(${pkgs.zsh-completions}share/zsh/site-functions $fpath)
-
-      ${builtins.readFile ./zshrc}
-    '';
     enableCompletion = true;
     enableAutosuggestions = true;
-    enableSyntaxHighlighting = true;
+    syntaxHighlighting = {
+        enable = true;
+      };
     oh-my-zsh = {
       enable = true;
-      plugins = [
-        "command-not-found"
-      ];
+      plugins = [ "tmux" "command-not-found" "zsh-interactive-cd" ];
+      extraConfig = ''
+        export ZSH_TMUX_FIXTERM=false
+        export ZSH_TMUX_AUTOQUIT=false
+        export ZSH_TMUX_AUTOSTART=true
+
+        fpath=(${pkgs.zsh-completions}share/zsh/site-functions $(brew --prefix)/share/zsh/site-functions $fpath)
+      '';
     };
     shellAliases = {
       drs = "darwin-rebuild switch";
@@ -36,7 +36,10 @@
       cat = "bat";
       cp = "cp -iv";
       mv = "mv -iv";
-      n = "ranger";
+      n = "nnn";
     };
+    initExtra = ''
+      ${builtins.readFile ./zshrc}
+    '';
   };
 }

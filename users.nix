@@ -8,4 +8,6 @@ in
     name = user.name;
     home = user.home;
   };
+
+  nix.settings.trusted-users = [ "bruno.romero" ];
 }

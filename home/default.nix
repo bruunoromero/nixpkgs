@@ -1,7 +1,6 @@
 { ... }:
 
-let
-  user = import ../user.nix { };
+let user = import ../user.nix { };
 in
 {
 
@@ -30,15 +29,16 @@ in
       ./dev/zig.nix
 
       ./programs/neovim
+      ./programs/zsh
       ./programs/direnv.nix
-      ./programs/ranger.nix
+      ./programs/nnn.nix
       ./programs/git.nix
       ./programs/starship.nix
       ./programs/bat.nix
       ./programs/exa.nix
       ./programs/fzf.nix
-      ./programs/kitty.nix
-      ./programs/zsh
+      ./programs/alacritty.nix
+      ./programs/tmux.nix
     ];
   };
 }

@@ -2,8 +2,7 @@
 
 {
   home.packages = [
-    pkgs.lua5_3
-    pkgs.lua53Packages.luarocks
+    pkgs.lua
     pkgs.stylua
     pkgs.fnlfmt
   ];

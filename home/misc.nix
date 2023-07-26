@@ -14,7 +14,6 @@
     pkgs.graphviz
 
     # Upgrade versions shipped with MacOS
-    pkgs.bash
     pkgs.file
     pkgs.gnupatch
     pkgs.less
