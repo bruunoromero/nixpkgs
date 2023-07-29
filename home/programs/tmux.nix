@@ -19,7 +19,7 @@
       set -g @plugin "tmux-plugins/tmux-yank"
       set -g @plugin "tmux-plugins/tmux-open"
 
-      set -g @catppuccin_flavour "frappe"
+      set -g @catppuccin_flavour "mocha"
 
       unbind r
       bind r source-file ~/.config/tmux/tmux.conf

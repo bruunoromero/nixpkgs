@@ -9,7 +9,6 @@
     pkgs.glow
     pkgs.docker
     pkgs.zk
-    pkgs.taskwarrior
     pkgs.cmake
     pkgs.graphviz
 

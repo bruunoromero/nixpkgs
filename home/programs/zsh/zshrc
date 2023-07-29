@@ -1,7 +1,5 @@
 . /etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh
 
-[[ ! -r /Users/bruno.romero/.opam/opam-init/init.zsh ]] || source /Users/bruno.romero/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-
 unsetopt BEEP
 
 alias gsed="sed"
@@ -34,12 +32,9 @@ export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME:$ANDROID
 export PATH="$PATH:$FLUTTER_SDK_HOME/bin:$HOME/.pub-cache/bin:$FLUTTER_ROOT/bin/cache/dart-sdk/bin"
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:/usr/bin"
-export PATH="$PATH:$HOME/.emacs.d/bin"
-export PATH="$PATH:$HOME/.emacs.d/bin"
-export PATH="$PATH:$HOME/.config/emacs/bin"
 
 export GPG_TTY=$(tty)
-export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+export CHROME_EXECUTABLE="/Applications/Arc.app/Contents/MacOS/Arc"
 export ZK_NOTEBOOK_DIR="$HOME/zk"
 
 export PNPM_HOME="/Users/bruno.romero/.local/share/pnpm"

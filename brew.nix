@@ -5,6 +5,7 @@
     enable = true;
     onActivation = { cleanup = "zap"; };
     taps = [
+      "keith/formulae"
       "homebrew/services"
       "koekeishiya/formulae"
       "kidonng/homebrew-malt"
@@ -31,6 +32,8 @@
       "crystal"
       "flyctl"
       "luarocks"
+      "reminders-cli"
+      "task"
     ];
     casks = [ "arc" "notion" "brave-browser" "obsidian" ];
   };
